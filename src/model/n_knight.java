@@ -7,6 +7,7 @@ public class n_knight extends chess_piece {
     }
 
     public boolean validator ( int i , int j  , int id1 , int id2 ) {
+        /* qualified moves vectors */
         int[][] qualified_moves = new int[][] {
                 {-2,1} ,
                 {-2,-1},

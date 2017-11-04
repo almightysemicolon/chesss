@@ -10,9 +10,9 @@ public class king extends chess_piece{
     public boolean validator ( int i , int j  , int id1 , int id2 ) {
         this.x = this.x - i ;
         this.y = this.y -j ;
-      this.x = this.x * this.x ;
-       this.y = this.y*this.y ;
-       // fix with absolute value --------------
+      this.x = java.lang.Math.abs(this.x) ;
+      this.y = java.lang.Math.abs(this.y) ;
+
        if ( this.x > 1 || this.y > 1 ) return false;
        this.move ( i ,j );
        return true ;

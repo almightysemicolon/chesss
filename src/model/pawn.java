@@ -11,11 +11,10 @@ public class pawn extends chess_piece {
 
         // this can be implemented better --------------
         // if the pawn is black
-        System.out.println ( this.x + " " + this.y + " " +  i  + " " + j + " "  + id1 + " " + id2 ) ;
         if ( id1 < 16 ) {
             if ( i == this.x + 1 && j == this.y  ) { this.move ( i , j ) ; return true ;}
             if ( id2 >= 16 && ( i == this.x + 1 ) && (( j == this.y +1 || j == this.y -1 ))) { this.move ( i , j ) ;  return true ; }
-            System.out.println("INV"); ;
+            System.out.println("invalid move");
             return false ;
         }
         // if the pawn is white
